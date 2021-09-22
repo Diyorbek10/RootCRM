@@ -46,9 +46,9 @@ class Header extends Component {
                     <div className="page-header">
                         <div className="left">
                             <div className="input-group">
-                                <input type="text" className="form-control" placeholder="What you want to find" />
+                                <input type="text" className="form-control" placeholder="Nima qidirishni xohlaysiz" />
                                 <div className="input-group-append">
-                                    <button className={`btn btn-outline-secondary${boxShadow ? ' box_shadow' : ''}`} type="button">Search</button>
+                                    <button className={`btn btn-outline-secondary${boxShadow ? ' box_shadow' : ''}`} type="button">Qidirish</button>
                                 </div>
                             </div>
                         </div>
@@ -107,9 +107,9 @@ class Header extends Component {
                                         George</span>
                                     <div className={`dropdown-menu dropdown-menu-right dropdown-menu-arrow${profileMenu ? ' show dProfile' : ''}`}>
                                         <Link className="dropdown-item" to="/pageProfile"><i
-                                            className="dropdown-icon fe fe-user"></i> Profile</Link>
+                                            className="dropdown-icon fe fe-user"></i> Profil</Link>
                                         <Link className="dropdown-item" to="/setting"><i
-                                            className="dropdown-icon fe fe-settings"></i> Settings</Link>
+                                            className="dropdown-icon fe fe-settings"></i> Sozlamalar</Link>
                                         
                                         
                                         <div className="dropdown-divider"></div>

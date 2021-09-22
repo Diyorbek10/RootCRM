@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { TabContent, TabPane, Nav, NavLink, NavItem } from "reactstrap";
 import classnames from 'classnames';
+import ToolTip from "../../common/toolTip";
+import SweetAlert from 'sweetalert2-react';
 import Dropzone from '../../common/DropzoneExample';
 
 export default class Transports extends Component {
@@ -8,8 +10,7 @@ export default class Transports extends Component {
 		super(props);
 		this.state = {
 			activeTab: 1,
-			isCardRemove: false,
-			isCollapsed: false,
+			
 			show: false
 		};
 	}
@@ -21,10 +22,10 @@ export default class Transports extends Component {
 					<div className="container-fluid">
 						<div className="d-flex justify-content-between align-items-center ">
 							<div className="header-action">
-								<h1 className="page-title">Transport</h1>
+								<h1 className="page-title">Harajatlar</h1>
 								<ol className="breadcrumb page-breadcrumb">
 									<li className="breadcrumb-item"><a href>Ericsson</a></li>
-									<li className="breadcrumb-item active" aria-current="page">Transport</li>
+									<li className="breadcrumb-item active" aria-current="page">Harajatlar</li>
 								</ol>
 							</div>
 							
@@ -60,117 +61,140 @@ export default class Transports extends Component {
 										<table className="table table-hover table-striped table-vcenter mb-0 text-nowrap">
 											<thead>
 												<tr>
-													<th>#</th>
-													<th>Driver Name</th>
-													<th>Mobile</th>
-													<th>License No</th>
-													<th>Vehicle No</th>
-													<th>Route Name</th>
-													<th>Map</th>
+													<th>Nomi</th>
+													<th>Sana</th>
+													<th>turkum</th>
+													<th>Oluvchi</th>
+													<th>Summa</th>
+													<th>o'chirish</th>
 												</tr>
 											</thead>
 											<tbody>
+											
 												<tr>
-													<td className="w60"><img className="avatar" src="../assets/images/xs/avatar1.jpg" alt="" /></td>
 													<td>Alan Johnson</td>
 													<td>404-447-6013</td>
 													<td>GHT-25-5845</td>
 													<td>UXS 111</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													{/* <button type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button> */}
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+													
+													{/* <button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button> */}
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar2.jpg" alt="" /></td>
 													<td>Alan Johnson</td>
 													<td>404-447-2356</td>
 													<td>GHT-25-4523</td>
 													<td>UXS 494</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+												
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar3.jpg" alt="" /></td>
 													<td>Ken Smith</td>
 													<td>404-447-8563</td>
 													<td>GHT-25-1599</td>
 													<td>UXS 494</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar4.jpg" alt="" /></td>
 													<td>Corrine Johnson</td>
 													<td>404-447-7532</td>
 													<td>GHT-25-5845</td>
 													<td>UXS 581</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar5.jpg" alt="" /></td>
 													<td>Alan Johnson</td>
 													<td>404-447-7856</td>
 													<td>GHT-25-5263</td>
 													<td>UXS 494</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar6.jpg" alt="" /></td>
 													<td>charGladys Smithlie</td>
 													<td>404-447-9512</td>
 													<td>GHT-25-7533</td>
 													<td>UXS 494</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar1.jpg" alt="" /></td>
 													<td>Alice Smith</td>
 													<td>404-447-6013</td>
 													<td>GHT-25-7485</td>
 													<td>UXS 324</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar2.jpg" alt="" /></td>
 													<td>Alan Johnson</td>
 													<td>404-447-4563</td>
 													<td>GHT-25-3577</td>
 													<td>UXS 494</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar3.jpg" alt="" /></td>
 													<td>Gerald Smith</td>
 													<td>404-447-9852</td>
 													<td>GHT-25-4566</td>
 													<td>UXS 494</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 												<tr>
-													<td><img className="avatar" src="../assets/images/xs/avatar4.jpg" alt="" /></td>
 													<td>Danny Johnson</td>
 													<td>404-447-4758</td>
 													<td>GHT-25-2588</td>
 													<td>UXS 4578</td>
 													<td>Botanic to Brooklyn</td>
-													<td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td>
+													<button onClick={() => this.setState({ show: true })} type="button" className="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i className="fa fa-trash-o text-danger"></i></button>
+
+													{/* <td><button type="button" className="btn btn-icon btn-sm" title="Map"><i className="fa fa-map"></i></button></td> */}
 												</tr>
 											</tbody>
 										</table>
 									</div>
 								</div>
 								<ul className="pagination">
-									<li className="page-item"><a className="page-link" href>Previous</a></li>
+									<li className="page-item"><a className="page-link" href>Dastlabki</a></li>
 									<li className="page-item"><a className="page-link" href>1</a></li>
 									<li className="page-item"><a className="page-link" href>2</a></li>
 									<li className="page-item"><a className="page-link" href>3</a></li>
-									<li className="page-item"><a className="page-link" href>Next</a></li>
+									<li className="page-item"><a className="page-link" href>Keyingi</a></li>
 								</ul>
+								<SweetAlert
+										show={this.state.show}
+										title="Rostan ham o'chirmoqchimisiz?!"
+										text="Siz ushbu ma'lumotni tiklay olmaysiz!"
+										type="Ogohlantirish"
+										showCancelButton={true}
+										confirmButtonColor="#dc3545"
+										confirmButtonText="Ha, o'chirish!"
+										closeOnConfirm={false}
+										onConfirm={() => this.setState({ show: false })}
+									/>
 							</TabPane>
 							<TabPane tabId={2} className={classnames(['fade show'])}>
 								<div className="card">

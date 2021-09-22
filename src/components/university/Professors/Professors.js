@@ -38,7 +38,7 @@ export default class Professors extends Component {
 										className={classnames({ active: activeTab === 1 })}
 										onClick={() => this.setState({ activeTab: 1 })}
 									>
-										List View
+										Jadval ko'rinishi
                    				</NavLink>
 								</NavItem>
 								<NavItem>
@@ -46,7 +46,7 @@ export default class Professors extends Component {
 										className={classnames({ active: activeTab === 2 })}
 										onClick={() => this.setState({ activeTab: 2 })}
 									>
-										Grid View
+										Ro'yxat ko'rinishi
     			               </NavLink>
 								</NavItem>
 								<NavItem>
@@ -54,7 +54,7 @@ export default class Professors extends Component {
 										className={classnames({ active: activeTab === 3 })}
 										onClick={() => this.setState({ activeTab: 3 })}
 									>
-										Profile
+										Profil
     			               </NavLink>
 								</NavItem>
 								<NavItem>
@@ -62,7 +62,7 @@ export default class Professors extends Component {
 										className={classnames({ active: activeTab === 4 })}
 										onClick={() => this.setState({ activeTab: 4 })}
 									>
-										Add
+										Qo'shish
     			               </NavLink>
 								</NavItem>
 							</Nav>
@@ -86,9 +86,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Gladys J Smith</div></td>
 												<td><span>(417) 646-8377</span></td>
 												<td><span className="text-muted">Computer</span></td>
-												<td>BCA, MCA</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -102,9 +102,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Alan Johnson</div></td>
 												<td><span>(417) 646-8377</span></td>
 												<td><span className="text-muted">Mechanical</span></td>
-												<td>MCA</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-warning">Part-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -118,9 +118,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">James A Johnson</div></td>
 												<td><span>(417) 646-1636</span></td>
 												<td><span className="text-muted">Mechanical</span></td>
-												<td>BCA</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -134,9 +134,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Ken Smith</div></td>
 												<td><span>(417) 646-8377</span></td>
 												<td><span className="text-muted">Mechanical</span></td>
-												<td>B.E.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -150,9 +150,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Alice A Smith</div></td>
 												<td><span>(417) 646-5023</span></td>
 												<td><span className="text-muted">Computer</span></td>
-												<td>M.E.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -166,9 +166,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Gladys J Smith</div></td>
 												<td><span>(417) 646-9207</span></td>
 												<td><span className="text-muted">Mechanical</span></td>
-												<td>B.B.A., P.H.D.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -182,9 +182,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Gerald K Smith</div></td>
 												<td><span>(417) 646-8377</span></td>
 												<td><span className="text-muted">Mathematics</span></td>
-												<td>M.COM, M.Ed.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -198,9 +198,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Gladys J Smith</div></td>
 												<td><span>(417) 646-9207</span></td>
 												<td><span className="text-muted">Mechanical</span></td>
-												<td>M.E.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-warning">Part-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -214,9 +214,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Danny M Johnson</div></td>
 												<td><span>(417) 646-8377</span></td>
 												<td><span className="text-muted">Mathematics</span></td>
-												<td>M.E.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -230,9 +230,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Patricia Smith</div></td>
 												<td><span>(417) 646-8377</span></td>
 												<td><span className="text-muted">Science</span></td>
-												<td>B.Sc., M.Sc.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-warning">Part-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>
@@ -246,9 +246,9 @@ export default class Professors extends Component {
 												<td><div className="font-15">Gladys J Smith</div></td>
 												<td><span>(417) 646-9207</span></td>
 												<td><span className="text-muted">Science</span></td>
-												<td>B.Sc., M.Sc.</td>
+												
 												<td><strong>04 Jan, 2019</strong></td>
-												<td><span className="tag tag-success">Full-time</span></td>
+												
 												<td>
 													<button type="button" className="btn btn-icon btn-sm" title="View"><i className="fa fa-eye"></i></button>
 													<button type="button" className="btn btn-icon btn-sm" title="Edit"><i className="fa fa-edit"></i></button>

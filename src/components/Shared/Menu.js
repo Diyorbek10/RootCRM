@@ -364,20 +364,20 @@ class Menu extends Component {
 									Statistics
                    				</TabLink>
 							</NavItem>
-							<NavItem>
+							{/* <NavItem>
 								<TabLink
 									className={classnames({ active: rightTab === 'result' })}
 									onClick={() => this.setState({ rightTab: 'result' })}
 								>
 									Result
     			               </TabLink>
-							</NavItem>
+							</NavItem> */}
 							<NavItem>
 								<TabLink
 									className={classnames({ active: rightTab === 'students' })}
 									onClick={() => this.setState({ rightTab: 'students' })}
 								>
-									Student
+									O'quvchilar
     			               </TabLink>
 							</NavItem>
 							<NavItem>
@@ -393,43 +393,20 @@ class Menu extends Component {
 							<TabPane tabId="statistics" className={classnames(['fade show'])}>
 								<div className="card">
 									<div className="card-body">
-										<div>Total Revenue</div>
+										<div>Umumiy daromad</div>
 										<div className="py-3 m-0 text-center h1 text-success">$79,452</div>
 										<div className="d-flex">
-											<span className="text-muted">Income</span>
+											<span className="text-muted">Foyda</span>
 											<div className="ml-auto"><i className="fa fa-caret-up text-success"></i>4%</div>
 										</div>
 									</div>
-									<div className="card-footer">
-										<ul className="list-unstyled mb-0">
-											<li className="mb-3">
-												<div className="clearfix">
-													<div className="float-left"><strong>$43,320</strong></div>
-													<div className="float-right"><small className="text-muted">Bank of America</small></div>
-												</div>
-												<div className="progress progress-xxs">
-													<div className="progress-bar bg-azure" role="progressbar" style={{ width: "87%" }}
-														aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</li>
-											<li>
-												<div className="clearfix">
-													<div className="float-left"><strong>$36,132</strong></div>
-													<div className="float-right"><small className="text-muted">Wells Fargo</small></div>
-												</div>
-												<div className="progress progress-xxs">
-													<div className="progress-bar bg-green" role="progressbar" style={{ width: "80%" }}
-														aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</li>
-										</ul>
-									</div>
+									
 								</div>
 								<div className="card">
 									<div className="card-body top_counter">
 										<div className="icon bg-yellow"><i className="fa fa-users"></i> </div>
 										<div className="content">
-											<span>Total Student</span>
+											<span>Umumiy O'quvchilar</span>
 											<h5 className="number mb-0">2,051</h5>
 										</div>
 									</div>
@@ -438,7 +415,7 @@ class Menu extends Component {
 									<div className="card-body top_counter">
 										<div className="icon bg-gray"><i className="fa fa-sitemap"></i> </div>
 										<div className="content">
-											<span>Department</span>
+											<span>Guruhlar</span>
 											<h5 className="number mb-0">14</h5>
 										</div>
 									</div>
@@ -447,7 +424,7 @@ class Menu extends Component {
 									<div className="card-body top_counter">
 										<div className="icon bg-dark"><i className="fa fa-black-tie"></i> </div>
 										<div className="content">
-											<span>Total Teacher</span>
+											<span>Umumiy O'qituvchilar</span>
 											<h5 className="number mb-0">27</h5>
 										</div>
 									</div>
@@ -456,7 +433,7 @@ class Menu extends Component {
 									<div className="card-body top_counter">
 										<div className="icon bg-azure"><i className="fa fa-tags"></i> </div>
 										<div className="content">
-											<span>Total Courses</span>
+											<span>Umumiy Kurslar</span>
 											<h5 className="number mb-0">31</h5>
 										</div>
 									</div>
@@ -465,7 +442,7 @@ class Menu extends Component {
 									<div className="card-body top_counter">
 										<div className="icon bg-pink"><i className="fa fa-credit-card"></i> </div>
 										<div className="content">
-											<span>Expense</span>
+											<span>Harajatlar</span>
 											<h5 className="number mb-0">$7,254</h5>
 										</div>
 									</div>
@@ -474,26 +451,8 @@ class Menu extends Component {
 									<div className="card-body top_counter">
 										<div className="icon bg-green"><i className="fa fa-bank"></i> </div>
 										<div className="content">
-											<span>Total Income</span>
+											<span>Umumiy foyda</span>
 											<h5 className="number mb-0">$27,852</h5>
-										</div>
-									</div>
-								</div>
-								<div className="card">
-									<div className="card-body top_counter">
-										<div className="icon bg-cyan"><i className="fa fa-map-o"></i> </div>
-										<div className="content">
-											<span>Our Center</span>
-											<h5 className="number mb-0">52</h5>
-										</div>
-									</div>
-								</div>
-								<div className="card">
-									<div className="card-body top_counter">
-										<div className="icon bg-indigo"><i className="fa fa-smile-o"></i> </div>
-										<div className="content">
-											<span>Smiley Face</span>
-											<h5 className="number mb-0">10K</h5>
 										</div>
 									</div>
 								</div>

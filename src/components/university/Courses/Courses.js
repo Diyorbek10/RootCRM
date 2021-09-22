@@ -22,10 +22,10 @@ export default class Courses extends Component {
 					<div className="container-fluid">
 						<div className="d-flex justify-content-between align-items-center ">
 							<div className="header-action">
-								<h1 className="page-title">Courses</h1>
+								<h1 className="page-title">Kurslar</h1>
 								<ol className="breadcrumb page-breadcrumb">
 									<li className="breadcrumb-item"><a href>Ericsson</a></li>
-									<li className="breadcrumb-item active" aria-current="page">Courses</li>
+									<li className="breadcrumb-item active" aria-current="page">Kurslar</li>
 								</ol>
 							</div>
 							<Nav tabs className="page-header-tab">
@@ -71,24 +71,25 @@ export default class Courses extends Component {
 														PHP Development Course
 														</Link>
 												</h5>
-												<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+										<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+												
 											</div>
 											<div className="table-responsive">
 												<table className="table table-striped table-vcenter mb-0">
 													<tbody>
 														<tr>
 															<td className="w20"><i className="fa fa-calendar text-blue"></i></td>
-															<td className="tx-medium">Duration</td>
+															<td className="tx-medium">Davomiyligi</td>
 															<td className="text-right">6 Months</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-cc-visa text-danger"></i></td>
-															<td className="tx-medium">Fees</td>
+															<td className="tx-medium">To'lovi</td>
 															<td className="text-right">$1,674</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-users text-warning"></i></td>
-															<td className="tx-medium">Students</td>
+															<td className="tx-medium">Talabalar</td>
 															<td className="text-right">125+</td>
 														</tr>
 													</tbody>
@@ -102,7 +103,6 @@ export default class Courses extends Component {
 														<small className="d-block text-muted">Head OF Dept.</small>
 													</div>
 													<div className="ml-auto text-muted">
-														<a href className="icon d-none d-md-inline-block ml-3"><i className="fe fe-heart mr-1"></i> 521</a>
 													</div>
 												</div>
 											</div>
@@ -114,24 +114,25 @@ export default class Courses extends Component {
 											<a href><img className="card-img-top" src="../assets/images/gallery/2.jpg" alt="" /></a>
 											<div className="card-body d-flex flex-column">
 												<h5><Link to="/courseDetails">Account Management Course</Link></h5>
-												<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+											
+										<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
 											</div>
 											<div className="table-responsive">
 												<table className="table table-striped table-vcenter mb-0">
 													<tbody>
 														<tr>
 															<td className="w20"><i className="fa fa-calendar text-blue"></i></td>
-															<td className="tx-medium">Duration</td>
-															<td className="text-right">1 Year</td>
+															<td className="tx-medium">Davomiyligi</td>
+															<td className="text-right">1 yil</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-cc-visa text-danger"></i></td>
-															<td className="tx-medium">Fees</td>
+															<td className="tx-medium">To'lovi</td>
 															<td className="text-right">$1,674</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-users text-warning"></i></td>
-															<td className="tx-medium">Students</td>
+															<td className="tx-medium">Talabalar</td>
 															<td className="text-right">50+</td>
 														</tr>
 													</tbody>
@@ -145,7 +146,6 @@ export default class Courses extends Component {
 														<small className="d-block text-muted">Head OF Dept.</small>
 													</div>
 													<div className="ml-auto text-muted">
-														<a href className="icon d-none d-md-inline-block ml-3"><i className="fe fe-heart mr-1"></i> 521</a>
 													</div>
 												</div>
 											</div>
@@ -156,24 +156,25 @@ export default class Courses extends Component {
 											<a href><img className="card-img-top" src="../assets/images/gallery/3.jpg" alt="" /></a>
 											<div className="card-body d-flex flex-column">
 												<h5><Link to="/courseDetails">Angular Programmer Course</Link></h5>
-												<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+										<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+												
 											</div>
 											<div className="table-responsive">
 												<table className="table table-striped table-vcenter mb-0">
 													<tbody>
 														<tr>
 															<td className="w20"><i className="fa fa-calendar text-blue"></i></td>
-															<td className="tx-medium">Duration</td>
+															<td className="tx-medium">Davomiyligi</td>
 															<td className="text-right">6 Months</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-cc-visa text-danger"></i></td>
-															<td className="tx-medium">Fees</td>
+															<td className="tx-medium">To'lovi</td>
 															<td className="text-right">$1,674</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-users text-warning"></i></td>
-															<td className="tx-medium">Students</td>
+															<td className="tx-medium">Talabalar</td>
 															<td className="text-right">125+</td>
 														</tr>
 													</tbody>
@@ -187,7 +188,6 @@ export default class Courses extends Component {
 														<small className="d-block text-muted">Head OF Dept.</small>
 													</div>
 													<div className="ml-auto text-muted">
-														<a href className="icon d-none d-md-inline-block ml-3"><i className="fe fe-heart mr-1"></i> 521</a>
 													</div>
 												</div>
 											</div>
@@ -198,24 +198,25 @@ export default class Courses extends Component {
 											<a href><img className="card-img-top" src="../assets/images/gallery/4.jpg" alt="" /></a>
 											<div className="card-body d-flex flex-column">
 												<h5><Link to="/courseDetails">PHP Development Course</Link></h5>
-												<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+										<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+
 											</div>
 											<div className="table-responsive">
 												<table className="table table-striped table-vcenter mb-0">
 													<tbody>
 														<tr>
 															<td className="w20"><i className="fa fa-calendar text-blue"></i></td>
-															<td className="tx-medium">Duration</td>
+															<td className="tx-medium">Davomiyligi</td>
 															<td className="text-right">6 Months</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-cc-visa text-danger"></i></td>
-															<td className="tx-medium">Fees</td>
+															<td className="tx-medium">To'lovi</td>
 															<td className="text-right">$1,674</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-users text-warning"></i></td>
-															<td className="tx-medium">Students</td>
+															<td className="tx-medium">Talabalar</td>
 															<td className="text-right">125+</td>
 														</tr>
 													</tbody>
@@ -229,7 +230,6 @@ export default class Courses extends Component {
 														<small className="d-block text-muted">Head OF Dept.</small>
 													</div>
 													<div className="ml-auto text-muted">
-														<a href className="icon d-none d-md-inline-block ml-3"><i className="fe fe-heart mr-1"></i> 521</a>
 													</div>
 												</div>
 											</div>
@@ -240,24 +240,25 @@ export default class Courses extends Component {
 											<a href><img className="card-img-top" src="../assets/images/gallery/5.jpg" alt="" /></a>
 											<div className="card-body d-flex flex-column">
 												<h5><Link to="/courseDetails">Magento Programmer Course</Link></h5>
-												<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+										<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+
 											</div>
 											<div className="table-responsive">
 												<table className="table table-striped table-vcenter mb-0">
 													<tbody>
 														<tr>
 															<td className="w20"><i className="fa fa-calendar text-blue"></i></td>
-															<td className="tx-medium">Duration</td>
-															<td className="text-right">1 Year</td>
+															<td className="tx-medium">Davomiyligi</td>
+															<td className="text-right">1 yil</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-cc-visa text-danger"></i></td>
-															<td className="tx-medium">Fees</td>
+															<td className="tx-medium">To'lovi</td>
 															<td className="text-right">$1,674</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-users text-warning"></i></td>
-															<td className="tx-medium">Students</td>
+															<td className="tx-medium">Talabalar</td>
 															<td className="text-right">50+</td>
 														</tr>
 													</tbody>
@@ -271,7 +272,6 @@ export default class Courses extends Component {
 														<small className="d-block text-muted">Head OF Dept.</small>
 													</div>
 													<div className="ml-auto text-muted">
-														<a href className="icon d-none d-md-inline-block ml-3"><i className="fe fe-heart mr-1"></i> 521</a>
 													</div>
 												</div>
 											</div>
@@ -282,24 +282,25 @@ export default class Courses extends Component {
 											<a href><img className="card-img-top" src="../assets/images/gallery/6.jpg" alt="" /></a>
 											<div className="card-body d-flex flex-column">
 												<h5><Link to="/courseDetails">UI UX Design Course</Link></h5>
-												<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+										<div className="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+
 											</div>
 											<div className="table-responsive">
 												<table className="table table-striped table-vcenter mb-0">
 													<tbody>
 														<tr>
 															<td className="w20"><i className="fa fa-calendar text-blue"></i></td>
-															<td className="tx-medium">Duration</td>
+															<td className="tx-medium">Davomiyligi</td>
 															<td className="text-right">6 Months</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-cc-visa text-danger"></i></td>
-															<td className="tx-medium">Fees</td>
+															<td className="tx-medium">To'lovi</td>
 															<td className="text-right">$1,674</td>
 														</tr>
 														<tr>
 															<td><i className="fa fa-users text-warning"></i></td>
-															<td className="tx-medium">Students</td>
+															<td className="tx-medium">Talabalar</td>
 															<td className="text-right">125+</td>
 														</tr>
 													</tbody>
@@ -313,7 +314,6 @@ export default class Courses extends Component {
 														<small className="d-block text-muted">Head OF Dept.</small>
 													</div>
 													<div className="ml-auto text-muted">
-														<a href className="icon d-none d-md-inline-block ml-3"><i className="fe fe-heart mr-1"></i> 521</a>
 													</div>
 												</div>
 											</div>
@@ -344,7 +344,7 @@ export default class Courses extends Component {
 											</div>
 											<div className="col-sm-6">
 												<div className="form-group">
-													<input type="number" className="form-control" placeholder="No. of Students " />
+													<input type="number" className="form-control" placeholder="No. of Talabalar " />
 												</div>
 											</div>
 											<div className="col-sm-6">

@@ -7,14 +7,14 @@ class Radarchart extends Component {
 
         this.state = {
             series: [{
-                name: 'Sales',
-                data: [80, 50, 30, 40, 100, 20],
+                name: 'Telegram',
+                data: [8, 5, 3, 4, 1, 2, 5,7,1,6,5,2],
             }, {
-                name: 'Income',
-                data: [20, 30, 40, 80, 20, 80],
+                name: 'Instagram',
+                data: [2, 3, 4, 8, 2, 8,3, 5, 3, 4, 1, 2],
             }, {
-                name: 'Expense',
-                data: [44, 76, 78, 13, 43, 10],
+                name: 'Facebook',
+                data: [4, 6, 8, 3, 3, 1,2, 3, 4, 8, 2, 8],
             }],
             options: {
                 chart: {
@@ -37,7 +37,7 @@ class Radarchart extends Component {
                 markers: {
                     size: 0
                 },
-                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'Jun']
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'Jun','Jul','Aug','Sent','Oct','Nov','Dec']
             }
         };
     }

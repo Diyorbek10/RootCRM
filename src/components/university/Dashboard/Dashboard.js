@@ -9,6 +9,7 @@ import Ckeditor from '../../common/ckeditor';
 import ToolTip from "../../common/toolTip";
 import { toggle3DotMenuAction } from "../../../actions/settingsAction";
 
+
 class Dashboard extends Component {
 	constructor(props) {
 		super(props);
@@ -24,59 +25,30 @@ class Dashboard extends Component {
 		const { activeTab, isCardRemove, isFullScreen, isCollapsed } = this.state
 		return (
 			<>
-				{/* <div className="section-body">
-					<div className="container-fluid">
-						<div className="d-flex justify-content-between align-items-center">
-							<div className="header-action">
-								<h1 className="page-title">Dashboard</h1>
-								<ol className="breadcrumb page-breadcrumb">
-									<li className="breadcrumb-item"><span>Ericsson</span></li>
-									<li className="breadcrumb-item"><span>University</span></li>
-									<li className="breadcrumb-item active" aria-current="page">Dashboard</li>
-								</ol>
-							</div>
-							<Nav tabs className="page-header-tab">
-								<NavItem>
-									<NavLink
-										className={classnames({ active: activeTab === 1 })}
-										onClick={() => this.setState({ activeTab: 1 })}
-									>
-										Dashboard
-                   				</NavLink>
-								</NavItem>
-								<NavItem>
-									<NavLink
-										className={classnames({ active: activeTab === 2 })}
-										onClick={() => this.setState({ activeTab: 2 })}
-									>
-										Activity
-    			               </NavLink>
-								</NavItem>
-							</Nav>
-						</div>
-					</div>
-				</div> */}
+
 				<div className="section-body mt-4">
 					<div className="container-fluid">
 						<div className="row clearfix row-deck">
-							<div className="col-6 col-md-4 col-xl-2">
+							{/* <div className="col-6 col-md-4 col-xl-2">
 								<div className="card">
 									<div className="card-body ribbon">
-										<ToolTip id="newProfessors" text="New Professors" />
+										<ToolTip id="newProfessors" text="Yangi o'qituvchilar" />
 										<div className="ribbon-box green" data-tip data-for="newProfessors">5</div>
 										<Link to="/professors" className="my_sort_cut text-muted">
 											<i className="fa fa-black-tie"></i>
-											<span>Professors</span>
+											<span>O'qituvchilar</span>
 										</Link>
 									</div>
 								</div>
-							</div>
+							</div> */}
 							<div className="col-6 col-md-4 col-xl-2">
 								<div className="card">
-									<div className="card-body">
+									<div className="card-body ribbon">
+										<ToolTip id="newStaff" text="O'quvchilar" />
+										<div className="ribbon-box orange" data-tip data-for="newStaff">8</div>
 										<Link to="/contact" className="my_sort_cut text-muted">
-											<i className="fa fa-address-book"></i>
-											<span>Contact</span>
+											<i className="fa fa-user-circle-o"></i>
+											<span>O'quvchilar</span>
 										</Link>
 									</div>
 								</div>
@@ -84,41 +56,59 @@ class Dashboard extends Component {
 							<div className="col-6 col-md-4 col-xl-2">
 								<div className="card">
 									<div className="card-body ribbon">
-										<ToolTip id="newStaff" text="New Staff" />
-										<div className="ribbon-box orange" data-tip data-for="newStaff">8</div>
+										<ToolTip id="newStaff" text="Hodimlar" />
+										<div className="ribbon-box green" data-tip data-for="newStaff">8</div>
 										<Link to="/staff" className="my_sort_cut text-muted">
-											<i className="fa fa-user-circle-o"></i>
-											<span>Staff</span>
+											<i className="fa fa-black-tie"></i>
+											<span>Hodimlar</span>
 										</Link>
 									</div>
 								</div>
 							</div>
 							<div className="col-6 col-md-4 col-xl-2">
 								<div className="card">
-									<div className="card-body">
+									<div className="card-body ribbon">
+										<ToolTip id="newStaff" text="Guruhlar" />
+										<div className="ribbon-box orange" data-tip data-for="newStaff">8</div>
 										<Link to="/filemanager" className="my_sort_cut text-muted">
 											<i className="fa fa-folder"></i>
-											<span>FileManager</span>
+											<span>Guruhlar</span>
 										</Link>
 									</div>
 								</div>
 							</div>
 							<div className="col-6 col-md-4 col-xl-2">
 								<div className="card">
-									<div className="card-body">
+									<div className="card-body ribbon">
+										<ToolTip id="newStaff" text="Kurslar" />
+										<div className="ribbon-box green" data-tip data-for="newStaff">8</div>
 										<Link to="/library" className="my_sort_cut text-muted">
 											<i className="fa fa-book"></i>
-											<span>Library</span>
+											<span>Kurslar</span>
 										</Link>
 									</div>
 								</div>
 							</div>
 							<div className="col-6 col-md-4 col-xl-2">
 								<div className="card">
-									<div className="card-body">
+									<div className="card-body ribbon">
+										<ToolTip id="newStaff" text="Lidlar" />
+										<div className="ribbon-box orange" data-tip data-for="newStaff">8</div>
 										<Link to="/holiday" className="my_sort_cut text-muted">
 											<i className="fa fa-bullhorn"></i>
-											<span>Holiday</span>
+											<span>Faol lidlar</span>
+										</Link>
+									</div>
+								</div>
+							</div>
+							<div className="col-6 col-md-4 col-xl-2">
+								<div className="card">
+									<div className="card-body ribbon">
+										<ToolTip id="newStaff" text="Qarzdorlar" />
+										<div className="ribbon-box green" data-tip data-for="newStaff">8</div>
+										<Link to="/holiday" className="my_sort_cut text-muted">
+											<i className="fa fa-credit-card"></i>
+											<span>Qarzdorlar</span>
 										</Link>
 									</div>
 								</div>
@@ -130,7 +120,7 @@ class Dashboard extends Component {
 									<div className="col-xl-12">
 										<div className={`card ${isCardRemove ? 'card-remove' : ''} ${isFullScreen ? 'card-fullscreen' : ''} ${isCollapsed ? 'card-collapsed' : ''}`}>
 											<div className="card-header">
-												<h3 className="card-title">University Report</h3>
+												<h3 className="card-title">To'lov tarixi</h3>
 												<div className="card-options">
 													<a href className="card-options-collapse" onClick={() => this.setState({ isCollapsed: !isCollapsed })}><i
 														className="fe fe-chevron-up"></i></a>
@@ -142,89 +132,34 @@ class Dashboard extends Component {
 											</div>
 											<div className="card-body">
 												<div className="d-sm-flex justify-content-between">
-													<div className="font-12 mb-2"><span>Measure How Fast You’re Growing Monthly
-                                                        Recurring Revenue. <a href>Learn More</a></span></div>
+													{/* <div className="font-12 mb-2"><span>Measure How Fast You’re Growing Monthly
+														Recurring Revenue. <a href>Learn More</a></span></div> */}
 													<div className="selectgroup w250">
 														<label className="selectgroup-item">
 															<input type="radio" name="intensity" value="low"
 																className="selectgroup-input" defaultChecked />
-															<span className="selectgroup-button">1D</span>
+															<span className="selectgroup-button">Kun</span>
 														</label>
 														<label className="selectgroup-item">
 															<input type="radio" name="intensity" value="medium"
 																className="selectgroup-input" />
-															<span className="selectgroup-button">1W</span>
+															<span className="selectgroup-button">Hafta</span>
 														</label>
 														<label className="selectgroup-item">
 															<input type="radio" name="intensity" value="high"
 																className="selectgroup-input" />
-															<span className="selectgroup-button">1M</span>
+															<span className="selectgroup-button">Oy</span>
 														</label>
 														<label className="selectgroup-item">
 															<input type="radio" name="intensity" value="veryhigh"
 																className="selectgroup-input" />
-															<span className="selectgroup-button">1Y</span>
+															<span className="selectgroup-button">Yil</span>
 														</label>
 													</div>
 												</div>
 												<Columnchart></Columnchart>
 											</div>
-											<div className="card-footer">
-												<div className="row">
-													<div className="col-xl-3 col-md-6 mb-2">
-														<div className="clearfix">
-															<div className="float-left"><strong>Fees</strong></div>
-															<div className="float-right"><small className="text-muted">35%</small>
-															</div>
-														</div>
-														<div className="progress progress-xs">
-															<div className="progress-bar bg-indigo" role="progressbar"
-																style={{ width: "35%" }} aria-valuenow="35" aria-valuemin="0"
-																aria-valuemax="100"></div>
-														</div>
-														<span className="text-uppercase font-10">Compared to last year</span>
-													</div>
-													<div className="col-xl-3 col-md-6 mb-2">
-														<div className="clearfix">
-															<div className="float-left"><strong>Donation</strong></div>
-															<div className="float-right"><small className="text-muted">61%</small>
-															</div>
-														</div>
-														<div className="progress progress-xs">
-															<div className="progress-bar bg-yellow" role="progressbar"
-																style={{ width: "61%" }} aria-valuenow="61" aria-valuemin="0"
-																aria-valuemax="100"></div>
-														</div>
-														<span className="text-uppercase font-10">Compared to last year</span>
-													</div>
-													<div className="col-xl-3 col-md-6 mb-2">
-														<div className="clearfix">
-															<div className="float-left"><strong>Income</strong></div>
-															<div className="float-right"><small className="text-muted">87%</small>
-															</div>
-														</div>
-														<div className="progress progress-xs">
-															<div className="progress-bar bg-green" role="progressbar"
-																style={{ width: "87%" }} aria-valuenow="87" aria-valuemin="0"
-																aria-valuemax="100"></div>
-														</div>
-														<span className="text-uppercase font-10">Compared to last year</span>
-													</div>
-													<div className="col-xl-3 col-md-6 mb-2">
-														<div className="clearfix">
-															<div className="float-left"><strong>Expense</strong></div>
-															<div className="float-right"><small className="text-muted">42%</small>
-															</div>
-														</div>
-														<div className="progress progress-xs">
-															<div className="progress-bar bg-pink" role="progressbar"
-																style={{ width: "42%" }} aria-valuenow="42" aria-valuemin="0"
-																aria-valuemax="100"></div>
-														</div>
-														<span className="text-uppercase font-10">Compared to last year</span>
-													</div>
-												</div>
-											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -232,32 +167,10 @@ class Dashboard extends Component {
 									<div className="col-xl-6 col-lg-6 col-md-12">
 										<div className="card">
 											<div className="card-header">
-												<h3 className="card-title">Exam Toppers</h3>
+												<h3 className="card-title">Bugungi dars jadvali</h3>
 												<div className="card-options">
 													<a href className="card-options-collapse" data-toggle="card-collapse"><i
 														className="fe fe-chevron-up"></i></a>
-													<div className={`item-action dropdown ml-2 ${is3DotMenu ? 'show' : ''}`}>
-														<a href data-toggle="dropdown" onClick={() => toggle3DotMenuAction(!is3DotMenu)}><i
-															className="fe fe-more-vertical"></i></a>
-														<div className={`dropdown-menu dropdown-menu-right${is3DotMenu ? ' show d3Dot' : ''}`}>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-eye"></i> View Details </a>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-share-alt"></i> Share </a>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-cloud-download"></i>
-                                                           Download</a>
-															<div className="dropdown-divider"></div>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-copy"></i> Copy to</a>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-folder"></i> Move to</a>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-edit"></i> Rename</a>
-															<a href className="dropdown-item"><i
-																className="dropdown-icon fa fa-trash"></i> Delete</a>
-														</div>
-													</div>
 												</div>
 											</div>
 											<div className="table-responsive" style={{ height: "310px" }}>
@@ -265,132 +178,106 @@ class Dashboard extends Component {
 													className="table card-table table-vcenter text-nowrap table-striped mb-0">
 													<tbody>
 														<tr>
-															<th>No.</th>
-															<th>Name</th>
-															<th></th>
-															<th>Marks</th>
-															<th>%AGE</th>
+															<th className="text-center">Kim/Guruh nomi</th>
+															<th className="text-center">Kurs</th>
+															<th className="text-center">O'quvchilar</th>
+															<th className="text-center">Vaqti</th>
+
 														</tr>
 														<tr>
-															<td>11</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar" src="../assets/images/xs/avatar1.jpg" alt="avatar" />
-																</div>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>
-																<div>Merri Diamond</div>
-																<div className="text-muted">Science</div>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
+														</tr>
+														
+														<tr>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>199</td>
-															<td>99.00</td>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
 														</tr>
 														<tr>
-															<td>23</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar"
-																		src="../assets/images/xs/avatar2.jpg" alt="avatar" />
-																</div>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>
-																<div>Sara Hopkins</div>
-																<div className="text-muted">Mechanical</div>
-															</td>
-															<td>197</td>
-															<td>98.00</td>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
 														</tr>
 														<tr>
-															<td>41</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar"
-																		src="../assets/images/xs/avatar3.jpg" alt="avatar" />
-																</div>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>
-																<div>Allen Collins</div>
-																<div className="text-muted">M.C.A.</div>
-															</td>
-															<td>197</td>
-															<td>98.00</td>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
 														</tr>
 														<tr>
-															<td>17</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar"
-																		src="../assets/images/xs/avatar4.jpg" alt="avatar" />
-																</div>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>
-																<div>Erin Gonzales</div>
-																<div className="text-muted">Arts</div>
-															</td>
-															<td>194</td>
-															<td>97.00</td>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
 														</tr>
 														<tr>
-															<td>57</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar"
-																		src="../assets/images/xs/avatar5.jpg" alt="avatar" />
-																</div>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>
-																<div>Claire Peters</div>
-																<div className="text-muted">Science</div>
-															</td>
-															<td>192</td>
-															<td>95.00</td>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
 														</tr>
 														<tr>
-															<td>85</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar"
-																		src="../assets/images/xs/avatar6.jpg" alt="avatar" />
-																</div>
+
+															<td className="w80 d-flex">
+																<div>
+																	<div>Merri Diamond</div>
+																	<div className="text-muted">Backend</div></div>
 															</td>
-															<td>
-																<div>Claire Peters</div>
-																<div className="text-muted">Science</div>
-															</td>
-															<td>192</td>
-															<td>95.00</td>
-														</tr>
-														<tr>
-															<td>9</td>
-															<td className="w40">
-																<div className="avatar">
-																	<img className="avatar"
-																		src="../assets/images/xs/avatar7.jpg" alt="avatar" />
-																</div>
-															</td>
-															<td>
-																<div>Claire Peters</div>
-																<div className="text-muted">Science</div>
-															</td>
-															<td>191</td>
-															<td>95.00</td>
+															<td className="text-center">Python Backend</td>
+															<td className="text-center">10</td>
+															<td className="text-center">14.00-16.00</td>
 														</tr>
 													</tbody>
 												</table>
 											</div>
-											<div className="card-footer d-flex justify-content-between">
+											{/* <div className="card-footer d-flex justify-content-between">
 												<div className="font-14"><span>Measure How Fast You’re Growing Monthly Recurring
                                                     Revenue. <a href>View All</a></span></div>
 												<div>
 													<button type="button" className="btn btn-primary">Export</button>
 												</div>
-											</div>
+											</div> */}
 										</div>
 									</div>
 									<div className="col-xl-6 col-lg-6 col-md-12">
 										<div className="card">
 											<div className="card-header">
-												<h3 className="card-title">Performance</h3>
+												<h3 className="card-title">Lidlar</h3>
 											</div>
 											<div className="card-body">
 												<Radarchart></Radarchart>
@@ -403,7 +290,7 @@ class Dashboard extends Component {
 									<div className="col-md-12">
 										<div className="card">
 											<div className="card-header">
-												<h3 className="card-title">New Student List</h3>
+												<h3 className="card-title">Yangi o'quvchilar ro'yxati</h3>
 												<div className="card-options">
 													<a href className="card-options-collapse" data-toggle="card-collapse"><i
 														className="fe fe-chevron-up"></i></a>
@@ -420,11 +307,11 @@ class Dashboard extends Component {
 															<tr>
 																<th>No</th>
 																<th>Name</th>
-																<th>Assigned Professor</th>
-																<th>Date Of Admit</th>
-																<th>Fees</th>
-																<th>Branch</th>
-																<th>Edit</th>
+																<th>O'qituvchi</th>
+																<th>Boshlagan sana</th>
+																<th>To'lov</th>
+																<th>Kurs</th>
+																<th>Tahrirlash</th>
 															</tr>
 														</thead>
 														<tbody>
@@ -434,7 +321,7 @@ class Dashboard extends Component {
 																<td>Kenny Josh</td>
 																<td>27/05/2016</td>
 																<td>
-																	<span className="tag tag-success">paid</span>
+																	<span className="tag tag-success">to'lagan</span>
 																</td>
 																<td>Mechanical</td>
 																<td>
@@ -450,7 +337,7 @@ class Dashboard extends Component {
 																<td> Mark</td>
 																<td>26/05/2018</td>
 																<td>
-																	<span className="tag tag-warning">unpaid</span>
+																	<span className="tag tag-danger">to'lamagan</span>
 																</td>
 																<td>Science</td>
 																<td>
@@ -466,7 +353,7 @@ class Dashboard extends Component {
 																<td>Cinnabar</td>
 																<td>21/05/2018</td>
 																<td>
-																	<span className="tag tag-success ">paid</span>
+																	<span className="tag tag-success ">to'lagan</span>
 																</td>
 																<td>Commerce</td>
 																<td>
@@ -482,7 +369,7 @@ class Dashboard extends Component {
 																<td>Felix </td>
 																<td>20/04/2019</td>
 																<td>
-																	<span className="tag tag-danger">unpaid</span>
+																	<span className="tag tag-danger">to'lamagan</span>
 																</td>
 																<td>Mechanical</td>
 																<td>
@@ -498,7 +385,7 @@ class Dashboard extends Component {
 																<td>Beryl</td>
 																<td>24/05/2017</td>
 																<td>
-																	<span className="tag tag-success ">paid</span>
+																	<span className="tag tag-success ">to'lagan</span>
 																</td>
 																<td>M.B.A.</td>
 																<td>
@@ -535,7 +422,7 @@ class Dashboard extends Component {
 																className="dropdown-icon fa fa-share-alt"></i> Share </a>
 															<a href className="dropdown-item"><i
 																className="dropdown-icon fa fa-cloud-download"></i>
-                                                            Download</a>
+																Download</a>
 															<div className="dropdown-divider"></div>
 															<a href className="dropdown-item"><i
 																className="dropdown-icon fa fa-copy"></i> Copy to</a>
@@ -591,7 +478,7 @@ class Dashboard extends Component {
 																className="dropdown-icon fa fa-share-alt"></i> Share </a>
 															<a href className="dropdown-item"><i
 																className="dropdown-icon fa fa-cloud-download"></i>
-                                                            Download</a>
+																Download</a>
 															<div className="dropdown-divider"></div>
 															<a href className="dropdown-item"><i
 																className="dropdown-icon fa fa-copy"></i> Copy to</a>
@@ -706,7 +593,7 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" defaultChecked />
 																	<span className="custom-control-label">Report Panel
-                                                                    Usag</span>
+																		Usag</span>
 																</label>
 															</td>
 															<td className="text-right">Feb 12-2019</td>
@@ -724,11 +611,11 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" />
 																	<span className="custom-control-label">Report Panel
-                                                                    Usag</span>
+																		Usag</span>
 																</label>
 															</td>
 															<td className="text-right">Feb 18-2019</td>
-															<td><span className="tag tag-warning ml-0 mr-0">MED</span></td>
+															<td><span className="tag tag-danger ml-0 mr-0">MED</span></td>
 															<td>
 																<img src="../assets/images/xs/avatar1.jpg"
 																	data-tip data-for="id0" data-placement="top" title=""
@@ -742,7 +629,7 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" defaultChecked />
 																	<span className="custom-control-label">New logo design for
-                                                                    Angular Admin</span>
+																		Angular Admin</span>
 																</label>
 															</td>
 															<td className="text-right">March 02-2019</td>
@@ -760,7 +647,7 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" defaultChecked />
 																	<span className="custom-control-label">Report Panel
-                                                                    Usag</span>
+																		Usag</span>
 																</label>
 															</td>
 															<td className="text-right">Feb 12-2019</td>
@@ -777,11 +664,11 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" />
 																	<span className="custom-control-label">Report Panel
-                                                                    Usag</span>
+																		Usag</span>
 																</label>
 															</td>
 															<td className="text-right">Feb 18-2019</td>
-															<td><span className="tag tag-warning ml-0 mr-0">MED</span></td>
+															<td><span className="tag tag-danger ml-0 mr-0">MED</span></td>
 															<td>
 																<img src="../assets/images/xs/avatar3.jpg"
 																	data-tip data-for="id0" data-placement="top" title=""
@@ -795,7 +682,7 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" defaultChecked />
 																	<span className="custom-control-label">New logo design for
-                                                                    Angular Admin</span>
+																		Angular Admin</span>
 																</label>
 															</td>
 															<td className="text-right">March 02-2019</td>
@@ -812,11 +699,11 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" />
 																	<span className="custom-control-label">Design PSD files for
-                                                                    Angular Admin</span>
+																		Angular Admin</span>
 																</label>
 															</td>
 															<td className="text-right">March 20-2019</td>
-															<td><span className="tag tag-warning ml-0 mr-0">MED</span></td>
+															<td><span className="tag tag-danger ml-0 mr-0">MED</span></td>
 															<td>
 																<img src="../assets/images/xs/avatar4.jpg"
 																	data-tip data-for="id0" data-placement="top" title=""
@@ -830,11 +717,11 @@ class Dashboard extends Component {
 																	<input type="checkbox" className="custom-control-input"
 																		name="example-checkbox1" value="option1" />
 																	<span className="custom-control-label">Design PSD files for
-                                                                    Angular Admin</span>
+																		Angular Admin</span>
 																</label>
 															</td>
 															<td className="text-right">March 20-2019</td>
-															<td><span className="tag tag-warning ml-0 mr-0">MED</span></td>
+															<td><span className="tag tag-danger ml-0 mr-0">MED</span></td>
 															<td>
 																<img src="../assets/images/xs/avatar5.jpg" data-tip data-for="id0" data-placement="top" title="" alt="Avatar" className="avatar" data-original-title="Avatar Name" />
 															</td>

@@ -7,11 +7,11 @@ class Columnchart extends Component {
 
         this.state = {
             series: [{
-                name: 'Fees',
+                name: 'Harajat',
                 type: 'column',
                 data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
             }, {
-                name: 'Donation',
+                name: 'Daromad',
                 type: 'line',
                 data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
             }],
@@ -34,13 +34,13 @@ class Columnchart extends Component {
                 },
                 yaxis: [{
                     title: {
-                        text: 'Fees',
+                        text: 'Harajat',
                     },
 
                 }, {
                     opposite: true,
                     title: {
-                        text: 'Donation'
+                        text: 'Daromad'
                     }
                 }]
             }
